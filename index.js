@@ -1,3 +1,5 @@
+"use strict";
+
 var NOOP = function() {};
 
 console._log = console.log;
@@ -14,4 +16,4 @@ module.exports = {
         console.error = enableLog ? console._error : NOOP;
         console.debug = enableLog ? console._debug : NOOP;
     }
-}
+};
